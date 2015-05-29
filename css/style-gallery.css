@@ -1,0 +1,183 @@
+a{
+outline:none;
+}
+.clearfix{
+clear:both;
+}
+.divMore{
+text-align:left;
+height: 200px;
+width: 100%;
+overflow-y: auto;
+margin: 5px auto 0; 
+background-color: rgba(255,255,255,0.1);
+border-radius: 5px;
+padding: 10px;
+}
+.divPostcircleInfo{
+display:table;
+}
+.divPostcircleInfo span{
+display:table-cell;
+vertical-align:middle;
+}
+#hMore{
+font-size: 1.2em;
+text-align: left;
+padding-left: 30px;
+width: 100%;
+margin: 30px auto 0;
+}
+.divMore img{
+width:50px;
+height:50px;
+margin:5px;
+margin-right:15px;
+border-radius:50%;
+}
+
+/* Effect hover */
+.circle {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.circle,
+.circle * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.circle a {
+  color: #333;
+}
+.circle a:hover {
+  text-decoration: none;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+}
+
+.circle{
+	display:inline-block;
+	margin:20px;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+.circle .circleMove {
+	overflow:hidden;
+}
+.circle .circleImg {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+.circle .circleImg:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.circle .circleImg img {
+  border-radius: 50%;
+}
+.circle .circleInfo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow:hidden;
+}
+.circle .circleInfo2{
+  position: absolute;
+  display:table;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  width:100%;
+  height:100%;
+}
+.circle .circleInfo2 span{
+	display:table-cell;
+	vertical-align:middle;
+}
+.circle.effect1 .circleMove {
+  width: 230px;
+  height: 230px;
+  border: 10px solid #5FAFC1;
+  border-right-color: #F1BC24;
+  border-bottom-color: #F1BC24;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.circle.effect1 .circleImg {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+.circle.effect1 .circleImg:before {
+  display: none;
+}
+.circle.effect1 .circleInfo {
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.circle.effect1 .circleInfo h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.circle.effect1 .circleInfo p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0;
+  font-size: 12px;
+  border-top: 1px dotted rgba(255, 255, 255, 0.3);
+}
+.circle.effect1 a:hover .circleMove {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.circle.circle.effect1 a:hover .circleInfo {
+  opacity: 1;
+}
