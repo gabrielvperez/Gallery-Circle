@@ -1,12 +1,7 @@
 # Gallery-Circle #
-Contributors: Gabriel Valero
-Donate link: https://www.linkedin.com/in/gabrielvaleroperez
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Author: Gabriel Valero - https://www.linkedin.com/in/gabrielvaleroperez
 
-
-# Description #
-Plugin to show the post of the category you choose as a gallery circles with a link to the post. As the plugin shows the post by categories will not have to update the gallery, it will ONLY!!. These circles have a nice hover effect. Some customizable parameters such as size, quantity, category, order and some more ...
+Plugin for Wordpress to show the post of the category you choose as a gallery circles with a link to the post. As the plugin shows the post by categories will not have to update the gallery, it will ONLY!!. These circles have a nice hover effect. Some customizable parameters such as size, quantity, category, order and some more ...
 
 # Shortcode options #
 * **category**   -> Category you want choose (Default All)
