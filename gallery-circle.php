@@ -13,7 +13,7 @@
  * Text Domain:       gallery-circle
  */
 
-wp_register_style('Gallery-Circle', '/wp-content/plugins/Gallery-Circle/css/style-gallery.css', array(), '', 'all' );
+wp_register_style('Gallery-Circle', plugins_url().'/Gallery-Circle/css/style-gallery.css', array(), '', 'all' );
 wp_enqueue_style( 'Gallery-Circle' );
 
 function shortcode_showGallery( $atts ) {
@@ -45,7 +45,7 @@ function shortcode_showGallery( $atts ) {
 	echo '<div class="circle effect1" style="width:'.$size.'px;height:'.$size.'px;"><a href="'.get_permalink() .'">';
 	echo '<div class="circleMove" style="width:'.($size+10).'px;height:'.($size+10).'px;"></div>';
 	if($post_thumbnail==='false' || $image=='') {
-		echo '<div class="circleImg"><img src="/wp-content/plugins/Gallery-Circle/images/'.$default_image.'" title="Read more about '.$title.'" alt="'.$title.'"/></div>';
+		echo '<div class="circleImg"><img src="'.plugins_url().'/Gallery-Circle/images/'.$default_image.'" title="Read more about '.$title.'" alt="'.$title.'"/></div>';
 	}
 	else{
 		echo '<div class="circleImg"><img src="'.$image.'" title="Read more about '.$title.'" alt="'.$title.'"></div>';
@@ -85,7 +85,7 @@ function shortcode_showGallery( $atts ) {
 				echo '<div class="divPost"><a href="'.get_permalink() .'">';
 				echo '<div class="divPostcircleInfo">';
 				if($post_thumbnail==='false' || $image=='') {
-					echo '<img src="/wp-content/plugins/Gallery-Circle/images/'.$default_image.'" title="Read more about '.$title.'" alt="'.$title.'"/>';
+					echo '<img src="'.plugins_url().'/Gallery-Circle/images/'.$default_image.'" title="Read more about '.$title.'" alt="'.$title.'"/>';
 				}
 				else{
 					echo '<img src="'.$image.'" title="Read more about '.$title.'" alt="'.$title.'"/>';
